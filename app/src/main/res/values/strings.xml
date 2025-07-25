@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Nari Raksha</string>
+    <string name="your_safety_our_priority">Your safety, our promise</string>
+    <string name="an_app_that_will_enhance_your_safety_and_security_in_various_situations">An app that will enhance your safety and security in various situations.</string>
+    <string name="get_started">Get Started</string>
+    <string name="email">Email</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or">OR</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="already_have_an_account">Already have an account ?</string>
+    <string name="forget_password_n">Forget Password</string>
+    <string name="welcome_oliva_grace">Welcome, Oliva Grace</string>
+</resources>

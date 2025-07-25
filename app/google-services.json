@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "827001059262",
+    "project_id": "narirakhsa",
+    "storage_bucket": "narirakhsa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827001059262:android:b18042e571ffd6ea99abef",
+        "android_client_info": {
+          "package_name": "com.rupam.narisuraksha"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWOP92q-CPq-1_wMyND99Dr24bVy05chM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
