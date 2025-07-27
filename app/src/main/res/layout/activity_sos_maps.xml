@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8E8E8E"
+    tools:context=".sosMaps">
+
+
+
+    <!-- Google Map Fragment -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingStart="60dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/women" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView5"
+            app:srcCompat="@drawable/police" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Calling....Police"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintHorizontal_bias="0.583"
+            app:layout_constraintStart_toStartOf="@+id/imageView6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_below="@+id/header"
+        android:layout_margin="16dp" />
+
+    <!-- Cancel Button -->
+    <ImageButton
+        android:id="@+id/cancelButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/cancel"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:layout_marginBottom="24dp" />
+</RelativeLayout>
