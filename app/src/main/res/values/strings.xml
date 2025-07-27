@@ -13,4 +13,5 @@
     <string name="already_have_an_account">Already have an account ?</string>
     <string name="forget_password_n">Forget Password</string>
     <string name="welcome_oliva_grace">Welcome, Oliva Grace</string>
+    <string name="title_activity_sos_maps">sosMaps</string>
 </resources>
