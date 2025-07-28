@@ -14,4 +14,7 @@
     <string name="forget_password_n">Forget Password</string>
     <string name="welcome_oliva_grace">Welcome, Oliva Grace</string>
     <string name="title_activity_sos_maps">sosMaps</string>
+    <string name="your_safety_is_our_mission_who_do_you_want_to_sms">Your safety is our mission. Who do you want to SMS.</string>
+    <string name="emergency_sms">Emergency SMS</string>
+    <string name="your_safety_is_our_mission_nwho_do_you_want_to_sms">Your safety is our mission.\nWho do you want to SMS.</string>
 </resources>

@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import com.google.firebase.database.DatabaseReference
+import com.rupam.narisuraksha.Emergency.emergency
 import com.rupam.narisuraksha.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +25,9 @@ class MainActivity : AppCompatActivity() {
 
         binding.sos.setOnClickListener {
             startActivity(Intent(this, sosMaps::class.java))
+        }
+        binding.emergency.setOnClickListener {
+            startActivity(Intent(this, emergency::class.java))
         }
 
         checkAndRequestPermissions()
