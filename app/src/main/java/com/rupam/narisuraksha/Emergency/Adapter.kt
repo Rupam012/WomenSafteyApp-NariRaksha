@@ -20,8 +20,9 @@ class Adapter(private val list: List<emergengydata>) : RecyclerView.Adapter<Adap
         val item = list[position]
         holder.binding.contactname.text = item.text
 
+        //What's App Click
         holder.binding.imageView11.setOnClickListener {
-            val phone = item.number ?: return@setOnClickListener
+            val phone = "+91${item.number}" ?: return@setOnClickListener
             val message = "🚨 Emergency! Please help me!"
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse("https://wa.me/$phone?text=${Uri.encode(message)}")

@@ -42,7 +42,9 @@ class emergency : AppCompatActivity() {
         })
 
         // Back button
-        binding.back.setOnClickListener { finish() }
+        binding.back.setOnClickListener {
+            finish()
+        }
 
         // Add Number button
         binding.mobilenumberadd.setOnClickListener {
