@@ -32,4 +32,7 @@
     <string name="national_helpline_icon">national helpline icon</string>
     <string name="national_helpline">National Helpline</string>
     <string name="the_common_helpline_number_for_your_country_is_8372084241">The common helpline number for your country is: 8372084241.</string>
+    <string name="logout">LogOut</string>
+    <string name="record">Record</string>
+    <string name="your_safety_is_our_mission_recording_is_started">Your safety is our mission. Recording is started.</string>
 </resources>
