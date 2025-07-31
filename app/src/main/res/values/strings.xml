@@ -21,4 +21,15 @@
     <string name="add_number">Add Number</string>
     <string name="back">Back</string>
     <string name="father">Father</string>
+    <string name="helpline_numbers">Helpline Numbers</string>
+    <string name="support_icon">support icon</string>
+    <string name="ask_for_help">Ask for help</string>
+    <string name="reach_out_to_us_for_help_at_8372084241_we_are_here_to_support_you">Reach out to us for help at 8372084241. We are here to support you.</string>
+    <string name="tech_s_helpline">Tech’s Helpline</string>
+    <string name="tech_helpline">Tech Helpline</string>
+    <string name="for_assistance_please_call_our_official_number_8372084241">For assistance, please call our official number: 8372084241.</string>
+    <string name="common_helpline_numbers">Common Helpline Numbers</string>
+    <string name="national_helpline_icon">national helpline icon</string>
+    <string name="national_helpline">National Helpline</string>
+    <string name="the_common_helpline_number_for_your_country_is_8372084241">The common helpline number for your country is: 8372084241.</string>
 </resources>

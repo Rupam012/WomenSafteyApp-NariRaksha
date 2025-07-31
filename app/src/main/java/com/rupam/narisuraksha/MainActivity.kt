@@ -29,6 +29,9 @@ class MainActivity : AppCompatActivity() {
         binding.emergency.setOnClickListener {
             startActivity(Intent(this, emergency::class.java))
         }
+        binding.helpline.setOnClickListener {
+            startActivity(Intent(this, helplineFragments::class.java))
+        }
 
         checkAndRequestPermissions()
     }
