@@ -28,6 +28,7 @@ class Adapter(private val list: List<emergengydata>) : RecyclerView.Adapter<Adap
             intent.data = Uri.parse("https://wa.me/$phone?text=${Uri.encode(message)}")
             holder.itemView.context.startActivity(intent)
         }
+        position
     }
 
     override fun getItemCount(): Int {
