@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.rupam.narisuraksha.Emergency.emergency
 import com.rupam.narisuraksha.databinding.ActivityMainBinding
@@ -16,12 +17,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private lateinit var database: DatabaseReference
+    private lateinit var auth: FirebaseAuth
 
     private val permissionRequestCode = 100
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        auth = FirebaseAuth.getInstance()
 
         binding.sos.setOnClickListener {
             startActivity(Intent(this, sosMaps::class.java))
@@ -32,7 +36,30 @@ class MainActivity : AppCompatActivity() {
         binding.helpline.setOnClickListener {
             startActivity(Intent(this, helplineFragments::class.java))
         }
+        binding.record.setOnClickListener {
+            startActivity(Intent(this, recordfragment::class.java))
+        }
+        binding.logout.setOnClickListener {
+            val builder = androidx.appcompat.app.AlertDialog.Builder(this)
+            builder.setTitle("Logout")
+            builder.setMessage("Are you sure you want to logout?")
 
+            builder.setPositiveButton("OK") { dialog, _ ->
+                auth.signOut()
+                val intent = Intent(this, Loginpage::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
+                finish()
+            }
+
+            builder.setNegativeButton("Cancel") { dialog, _ ->
+                dialog.dismiss()
+            }
+
+            val dialog = builder.create()
+            dialog.show()
+
+        }
         checkAndRequestPermissions()
     }
 
