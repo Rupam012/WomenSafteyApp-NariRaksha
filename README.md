@@ -41,8 +41,6 @@
 
 ## 🏗 Architecture
 
-Brief high-level architecture (fill with your actual implementation):
-
 - **Language:** Kotlin
 - **UI:** Android XML Layouts
 - **Backend / Services**: Firebase Authentication, Realtime Database / Firestore, Firebase Storage for media, Firebase Cloud Messaging (optional).
